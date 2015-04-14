@@ -1,5 +1,6 @@
 var languages = {
 	  javascript: /\b(function|return|var|break|if)\b/g /* ... etc */
+	  javascript: /\b\W*/
 };
 
 
@@ -14,7 +15,7 @@ function highlightAllCode() {
 
        var lang = pre.getAttribute("data-language");
 
-       var foo = pre.getAttribute("fooness");
+    //   var foo = pre.getAttribute("fooness");
 
        //If lang is a language
 

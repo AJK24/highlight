@@ -3,34 +3,13 @@
 <title>
 Javascript Syntax Highlighter
 </title>
-<script type="text/javascript" src="js/highlightCode.js"></script>
-
-<script type="text/javascript">
-var languages = {
-  javascript: /\b(function|return|var|break|if)\b/g /* ... etc */
-};
+<script type="text/javascript" src="js/highlightAllCode.js"></script>
 
 
-function highlightAllCode() {
-//Gets what is in 'pre' and stores it in 'pres'
-  var pres = document.body.getElementsByTagName("pre");
-  // loops for the length of pres
-  for (var i = 0; i < pres.length; i++) {
-    // new pre variable is set for the current character in pres
-    var pre = pres[i];
-    //sets new variable lang to the attribute 'data-language' in pre
-    var lang = pre.getAttribute("data-language");
-    //If lang is a language
-    if (languages.hasOwnProperty(lang))
-	    //Highlight that code
-      highlightCode(pre, languages[lang]);
-  }
-}
-</script>
 </head>
 <body>
 <p>Here it is, the identity function:</p>
-<pre data-language="javascript">
+<pre data-language="javascript" fooness="monumental">
 function id(x) {
 	if(x ==1){
 		break;

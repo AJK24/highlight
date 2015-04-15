@@ -3,13 +3,15 @@
 <title>
 Javascript Syntax Highlighter
 </title>
-<script type="text/javascript" src="js/highlightAllCode.js"></script>
+<script type="text/javascript" src="js/highlightCode.js"></script>
+<script type="text/javascript" src="js/highlight.js"></script>
+
 
 
 </head>
 <body>
 <p>Here it is, the identity function:</p>
-<pre data-language="javascript" fooness="monumental">
+<pre data-language="javascript" class-proof="Andrew K">
 function id(x) {
 	if(x ==1){
 		break;
@@ -17,6 +19,23 @@ function id(x) {
  return x;
 }
 </pre>
+
+<pre data-language="javascript">
+
+function tester(x, y, z){
+	while(x){
+		if(z == 0)
+			return z;
+		if(y == 1)
+			return y;
+		else
+			return -1;
+	}
+}
+</pre>
+
+
+
 
 <script>highlightAllCode();</script>
 </body>

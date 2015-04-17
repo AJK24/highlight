@@ -1,6 +1,6 @@
 var languages = {
-	  javascript: /\b(function|return|var|break|if)\b/g /* ... etc */
-	  java: /\b(function|int|string|char|break|if|while|for)\b/g 
+	  javascript: /\b(function|return|var|break|if)\b/g /* ... etc */,
+	  java: /\b(function|int|string|char|break|if|else|while|for)\b/g 
 
 	 	  // javascript: /\b\w*/
 };
@@ -16,7 +16,7 @@ function highlightAllCode() {
        //sets new variable lang to the attribute 'data-language' in pre
 
        var lang = pre.getAttribute("data-language");
-       var jlang = pre.getAttribute("java");
+     //  var jlang = pre.getAttribute("java");
 
        var name = pre.getAttribute("class-proof");
 
